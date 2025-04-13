@@ -22,5 +22,9 @@ graph TD
     Frontend -->|Chama| Backend
     Backend -->|Lê/Grava| DB
     Backend -->|Busca dados| API
+```
+### Nível 3 - Diagrama de Contêineres
+
+O modelo C4 foi escolhido porque oferece uma forma simples e clara de visualizar os diferentes níveis da arquitetura do sistema. Ele permite comunicar de forma simples e direta a estrutura técnica do projeto para desenvolvedores e também para pessoas não técnicas, como avaliadores do projeto. A separação entre frontend, backend e banco de dados facilita o desenvolvimento colaborativo e modular.
 
 
