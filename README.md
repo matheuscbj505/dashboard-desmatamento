@@ -26,3 +26,15 @@ Sistema Web com Backend Django e Frontend React.
 - ✅ O sistema deve ser responsivo.
 - ✅ A interface deve ser intuitiva e acessível.
 
+
+### Nível 1 - Diagrama de Contexto
+
+```mermaid
+graph TD
+    Cidadao[Cidadão Brasileiro] -->|Visualiza dados| Sistema
+    Pesquisador[Pesquisador/Analista] -->|Realiza análises| Sistema
+    Sistema[Sistema de Monitoramento de Desmatamento]
+    Sistema -->|Busca dados| API_INPE[API Pública (INPE/MapBiomas)]
+    Sistema -->|É hospedado em| Plataforma[Plataforma de Hospedagem (Render/Vercel)]
+
+
