@@ -9,14 +9,16 @@
 
 ---
 
-### Nível 2 - Diagrama de Contexto (C4)
+### Nível 2 - Diagrama de Contêineres
 
 ```mermaid
 graph TD
-    Cidadao[Cidadão Brasileiro] -->|Visualiza dados| Sistema
-    Pesquisador[Pesquisador/Analista] -->|Realiza análises| Sistema
-    Sistema[Sistema de Monitoramento de Desmatamento]
-    Sistema -->|Busca dados| API_INPE[API Pública - INPE/MapBiomas]
-    Sistema -->|É hospedado em| Plataforma[Plataforma de Hospedagem - Render/Vercel]
+    Usuario[Usuário do Sistema] --> Frontend
+    Frontend[Frontend - React]
+    Backend[Backend - Django + DRF]
+    DB[Banco de Dados - SQLite]
+    API[API Pública - INPE ou MapBiomas]
 
-    Sistema -->|É hospedado em| Plataforma[Plataforma de Hospedagem (Render/Vercel)]
+    Frontend -->|Chama| Backend
+    Backend -->|Lê/Grava| DB
+    Backend -->|Busca dados| API
