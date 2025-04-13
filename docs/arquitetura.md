@@ -23,8 +23,9 @@ graph TD
     Backend -->|Lê/Grava| DB
     Backend -->|Busca dados| API
 ```
-### Nível 3 - Diagrama de Contêineres
+### Nível 3 - Justificativa do Modelo 
 
-O modelo C4 foi escolhido porque oferece uma forma simples e clara de visualizar os diferentes níveis da arquitetura do sistema. Ele permite comunicar de forma simples e direta a estrutura técnica do projeto para desenvolvedores e também para pessoas não técnicas, como avaliadores do projeto. A separação entre frontend, backend e banco de dados facilita o desenvolvimento colaborativo e modular.
+Foi escolhida uma arquitetura monolítica, com Django no back-end e React no front-end, pois ela permite uma integração simples e eficiente entre os dois. O Django gerencia o banco de dados e as APIs, enquanto o React proporciona uma interface interativa para o usuário. A escolha por uma arquitetura monolítica facilita o desenvolvimento inicial e a manutenção do projeto, permitindo ajustes futuros caso o sistema precise de mais escalabilidade, sem prejudicar a estrutura
+
 
 
